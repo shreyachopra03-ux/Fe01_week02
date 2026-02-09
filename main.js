@@ -4,7 +4,7 @@
 
 
 // const (constant) , let usecase :
-// const -> use when re-assign nhi krni kisi ki value 
+// const -> use when re-assign nhi krni kisi ki value
 // let -> use jab baar bar values re-assign krni pd skti hai !
 
 
@@ -20,8 +20,17 @@
 
 // primitve data types : String, numbers, boolean, null, undefined
 // string declare krne ke liye always use single or double commas
-// null -> mtlb ki empty hai
-// undefined ->  mtlb ki intentionally no value is given 
+// null -> mtlb kii intentionally maine value null rkhi hai mujhe nhi chhaiye vhaa kuch
+// undefined -> it means ki variable ko declare krdiya hai but koi value assign nhi kri.
+
+// undefined example:
+// let x;
+// console.log(x);
+
+// null example
+// let y = null;
+// console.log(y);
+
 
 // const name = 'shreya';
 // const age = 22;
@@ -140,12 +149,12 @@
 
 
  
-// //  FOR LOOP
+//  FOR LOOP
 // for(let i = 0; i < 10; i++) {
 //     console.log(`For loop number:${i}`);
 // }
 
-// // while loop
+// while loop
 // let i = 0;
 // while(i < 10) {
 //     console.log(`while loop number:${i}`);
@@ -200,6 +209,7 @@
 
 
 // combined example of map & filter (vvv imp) +++++++++++++++++
+
 // const todoCompleted = todos.filter(function(todo) {
 //     return todo.isCompleted === true;
 // }).map(function(todo) {
@@ -230,7 +240,6 @@
 //     console.log('x is less thann 10');
 // }
 
-
 // +++++++++++++ OR (dono mei se koi bhi ek value true honi chhaiye bs) +++++++++
 // const x = 4;
 // const y = 11;
@@ -241,6 +250,7 @@
 
 
 // +++++++++++ AND (both values should be true) ++++++++++++++++++
+
 // const x = 4;
 // const y = 11;
 
@@ -273,7 +283,6 @@
 //    break;
 // }
 
-
 // ++++++++++ Functions & parameters +++++++++++++
 
 // function addNumbers(nums1 , nums2) {
@@ -291,7 +300,6 @@
 // console.log(addNums());
 
 
-
 // ++++++++++++++ Constructor Function ++++++++
 
 // function Person(firstName, lastName, dob) {
@@ -307,6 +315,7 @@
 
 
 //  ++++++++++ more better way ++++++++++++
+
 // Person.prototype.getBirthYear = function()  {
 //     return this.dob.getFullYear();
 // }
