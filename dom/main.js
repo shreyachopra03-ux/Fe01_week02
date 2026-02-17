@@ -1,23 +1,18 @@
-// console.log(window);
-// alert(1);
+console.log(window);
+alert(1);
 
-// Single  element selctors ++++++++++
+// ++++++++ Single element selectors ++++++++++
 // console.log(document.getElementById('email'));
-
 // console.log(document.querySelector('.msg'));
-
 // const heading = document.querySelector('h1');
 // console.log(heading);
 
 
-
-// Multiple element selectors ++++++++++++++
+// +++++++++ Multiple element selectors ++++++++++++++
 // console.log(document.querySelectorAll('.item'));
-// console.log(document.getElementsByClassName('item'));  don't use this -> not recommended
-
+// console.log(document.getElementsByClassName('item'));  // don't use this -> not recommended
 
 // const material = document.querySelectorAll('.item');
-
 // material.forEach((item) => console.log(item));
 
 //   +++++++ manipulating DOM +++++++++++
@@ -31,7 +26,7 @@
 // +++++++++ ways of manipulating the text +++++++
 // ul.firstElementChild.textContent = 'shreya';  
 // ul.children[1].innerText = 'soumya';
-// ul.children[2].innerHTML = '<h1>shruti & deepali</h1>';
+// ul.children[2].innNerHTML = '<h1>shruti & deepali</h1>';
 
 // ++++++++++++ Agr button ka bg color change krna hai toh ++++++++
 // const btn = document.querySelector('.btn');
@@ -65,27 +60,27 @@
 // document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>'
 // document.querySelector('#my-form').style.background = 'pink';
 
-const myForm = document.querySelector('#my-form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const msg = document.querySelector('.msg');
-const userList = document.querySelector('#users');
+// const myForm = document.querySelector('#my-form');
+// const nameInput = document.querySelector('#name');
+// const emailInput = document.querySelector('#email');
+// const msg = document.querySelector('.msg');
+// const userList = document.querySelector('#users');
 
-myForm.addEventListener('submit', onSubmit);
+// myForm.addEventListener('submit', onSubmit);
 
-function onSubmit(e) {
-    e.preventDefault();
+// function onSubmit(e) {
+//     e.preventDefault();
 
     // console.log(nameInput.value);
 
-    if(nameInput.value === '' || emailInput.value === '') {
-        msg.classList.add('error');
-        msg.innerHTML = 'please enter all fileds'
-        msg.style.background = 'red';
+    // if(nameInput.value === '' || emailInput.value === '') {
+    //     msg.classList.add('error');
+    //     msg.innerHTML = 'please enter all fileds'
+    //     msg.style.background = 'red';
         
 
-        setTimeout(() => msg.remove(), 1500);
-    } 
+    //     setTimeout(() => msg.remove(), 1500);
+    // } 
     
     // else{
     //     msg.classList.add('error');
@@ -95,17 +90,17 @@ function onSubmit(e) {
     //    setTimeout(() => msg.remove(), 1500);
     // }
 
-    else{
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(
-         `${nameInput.value} : ${emailInput.value}`));
+//     else{
+//         const li = document.createElement('li');
+//         li.appendChild(document.createTextNode(
+//          `${nameInput.value} : ${emailInput.value}`));
 
-         userList.appendChild(li);
+//          userList.appendChild(li);
 
          // Clear fields -> ek user ki info fill hone ke baad name and email boxes clear ho jaayenge 
-         nameInput.value ='';
-         emailInput.value = '';
+//          nameInput.value ='';
+//          emailInput.value = '';
         
-    }
+//     }
 
-}
+// }
